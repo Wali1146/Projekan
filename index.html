@@ -1,12 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test RevoU</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Test RevoU Bootcamp</title>
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <h2>Ini Fitra</h2>
+    <p class="text-3xl pb-4 text-blue-500 font-bold pl-6 pt-6 bg-yellow-100">Hello World!</p>
+    <hr>
+    <p>Hallo, nama saya <br>Wali</p>
+    <!-- Ini komentar untuk baris ini pakai "ctrl + /" -->
+    <h1>Ini heading 1</h1>
+    <h2>Ini heading 2</h2>
+    <h3>Ini heading 3</h3>
+    <h4>Ini heading 4</h4>
+    <h5>Ini heading 5</h5>
+    <h6>Ini heading 6</h6>
+    <p>Teks ini ada <b>Bold</b> nya, <i>Italic</i> nya,</p>
+    <p>Ini tulisan yg <sub>ke bawah</sub> dan yg <sup>ke atas</sup></p>
+    <h1>Bullet point</h1>
+    <ul type="">
+        <li>Pisang <p>Pisang adalah makanan buah-buahan yg biasa dimakan</p></li>
+        <li>Apel</li>
+        <li>Mangga</li>
+        <li>Jeruk</li>
+    </ul>
+    <h1>Number Point</h1>
+    <p>Cara menjalankan HTML pakai VSCode</p>
+    <ol type="">
+        <li>Buka VSCodenya</li>
+        <li>Open folder project yg akan dikerjakan</li>
+        <li>Buat file index.HTMl</li>
+        <li>Isi file index.HTML diawali dengan "HTML:5"</li>
+        <li>Jalankan dengan live preview extension dari Microsoft</li>
+    </ol>
+    <h1>Tabel</h1>
+    <table border="1">
+        <thead>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alfred</td>
+                <td>alfred@alfred.com</td>
+                <td>German</td>
+            </tr>
+            <tr>
+                <td>Budi</td>
+                <td>budi@budi.com</td>
+                <td>Indonesia</td>
+            </tr>
+            <tr>
+                <td>Charlie</td>
+                <td>charlie@charlie.com</td>
+                <td>USA</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1>Gambar</h1>
+    <!-- Image dari URL luar -->
+    <img src="https://assets.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/2023/06/11/funny-goats-1680x1050-entertainment-funny-hd-art-wallpaper-preview-2846425286.jpg"
+    alt="Kambing"
+    height="200px">
+    <h1>Link</h1>
+    <p>Ini adalah link ke <a href="https://www.google.com/search?sca_esv=eee2bc57351991e6&sxsrf=AE3TifOxvWtZ7Dh1XDvkN7cdI5zDJLOFZQ:1751374209788&q=kambing&udm=2&fbs=AIIjpHyT_SxYVhARa94nMDCzZuVEvMkE-J61QbTv3NoNV4OTGLKCCopaCiL2gmcDJSnglckhH71HX9Tr39z5dCAgu5QvofyV0roMXWe_I5d8QWU89QpvSLgSU0zCTKC12c7w3Y4gnDBv10vji3dzaBpGkjWjFb5jPEpoqBIPdNXMOBDR3b0Pz9ppU-Fnaxqzj8OH9awJTzjgH9S5ievqDzGKUNJIzr9klg&sa=X&ved=2ahUKEwi7qJKt2ZuOAxU6SGwGHfXcGfwQtKgLKAF6BAgPEAE&biw=1366&bih=607&dpr=1#vhid=ME2VtggwjlwilM&vssid=mosaic" target="_blank">
+    Kambing</a></p>
+    <p><a href="#lorem">Pergi ke lorem</a></p>
+    <h1>Form Contact us</h1>
+    <form action="">
+        <label>Nama</label>
+        <input type="text" placeholder="Tulis Nama Disini"><br>
+        <label>Umur</label>
+        <input type="number" min="0" max="100" placeholder="19"><br>
+        <label>Password</label>
+        <input type="password"><br>
+        <label>Jenis Kelamin</label>
+        <input type="radio" value="Male" name="jenis-kelamin">Laki-laki
+        <input type="radio" value="female">Perempuan
+        <br>
+        <label>Makanan Favorit</label>
+        <select>
+            <option value="nasi goreng">Nasi Goreng</option>
+            <option value="soto">Soto</option>
+            <option value="sate">Sate</option>
+            <option value="bakso">Bakso</option>
+            <option value="mie-ayam">Mie Ayam</option>
+        </select><br>
+        <label>Comment</label><br>
+        <textarea rows="5" cols="30" placeholder="Tulis komentar Anda Disini"></textarea><br>
+        <label>Checkbox</label><br>
+        <input type="checkbox">Saya Setuju Dengan Syarat & Ketentuan
+        <br>
+        <input type="submit" value="Send">
+        <button type="submit">Kirim</button>
+    </form>
+    <p id="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus recusandae maxime, deleniti nam quasi magnam quaerat possimus quia error, cum deserunt? Error ducimus non voluptates ab dolorem aut dolor corporis?</p>
 </body>
 </html>
